@@ -1,0 +1,31 @@
+{
+  "name": "brewery",
+  "version": "1.0.0",
+  "description": "Brewery Homepage",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caballojhonson/Brewery-homepage.git"
+  },
+  "keywords": [
+    "brewery",
+    "homepage"
+  ],
+  "author": "ILP",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Caballojhonson/Brewery-homepage/issues"
+  },
+  "homepage": "https://github.com/Caballojhonson/Brewery-homepage#readme",
+  "devDependencies": {
+    "css-loader": "^5.2.6",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
