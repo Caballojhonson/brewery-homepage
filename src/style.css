@@ -1,0 +1,25 @@
+html, body {
+    margin: 0px;
+    min-height: 100%;
+}
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#content {
+    justify-content: flex-start;
+}
+#sideBar {
+    background-color: rgb(145, 145, 145);
+    width: 20rem;
+}
+#logo{
+    width: 8rem;
+}
