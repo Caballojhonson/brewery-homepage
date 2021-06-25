@@ -1,11 +1,19 @@
 import './style.css';
 import logoSB from './images/logo.png'
 import githubPNG from './images/github-logo.png'
+import scrollPNG from './images/scroll.png';
 
 const sideBar = (() => {
     const main = document.getElementById('content');
+
     const scrollable = document.createElement('div');
     scrollable.id = 'scrollable';
+    const scrollSection = document.createElement('div');
+    scrollSection.id = 'scrollSection';
+    const scrollIcon = new Image();
+    scrollIcon.id = 'scrollIcon';
+    scrollIcon.src = scrollPNG;
+
 
     const sideContainer = document.createElement('div');
     sideContainer.id = 'sideBar';
@@ -49,6 +57,8 @@ const sideBar = (() => {
     const render = () => {
         main.appendChild(sideContainer);
         main.appendChild(scrollable);
+        scrollable.appendChild(scrollSection)
+        scrollSection.appendChild(scrollIcon);
 
         sideContainer.appendChild(logoContainer);
         sideContainer.appendChild(linkContainer);
