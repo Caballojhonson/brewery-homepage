@@ -19,6 +19,7 @@ nav {
     justify-content: space-evenly;
 }
 #content {
+    flex-direction: column;
     justify-content: center;
     background-repeat: no-repeat;
     background-size:cover;
@@ -45,10 +46,12 @@ nav {
     display: none; /* for Chrome, Safari, and Opera */
 }
 #scrollSection {
-position: relative;
-width: 100%;
+position: sticky;
+margin: -25vh 0px 15vh 20rem;
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;;
+width: 60%;
 height: 10vh;
-top: 55vh;
 background: rgb(255,255,255);
 background: linear-gradient(180deg,
  rgba(255,255,255,0) 0%,

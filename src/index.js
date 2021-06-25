@@ -57,7 +57,7 @@ const sideBar = (() => {
     const render = () => {
         main.appendChild(sideContainer);
         main.appendChild(scrollable);
-        scrollable.appendChild(scrollSection)
+        main.appendChild(scrollSection)
         scrollSection.appendChild(scrollIcon);
 
         sideContainer.appendChild(logoContainer);
