@@ -1,6 +1,9 @@
 :root{
-    --bottleBackground: url('./images/Randoms-1.JPG');
+
     --mainBackground: url('./images/Randoms-1-3.JPG');
+    --productsBackground: url('./images/Randoms-1.JPG');
+    --aboutBackground: url('./images/Randoms-1-4.JPG');
+    --contactBackground: url('./images/Randoms-1-5.JPG');
 }
 @font-face {
     font-family: 'Oswald';
@@ -203,5 +206,8 @@ background: linear-gradient(180deg,
 /* ABOUT */
 
 #aboutText {
-    padding: 10rem;
+    padding: 5rem 12rem 10rem 12rem;
+    letter-spacing: 0.2px;
+    line-height: 1.7rem;
+    
 }
