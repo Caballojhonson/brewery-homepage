@@ -32,6 +32,7 @@ const handle = (() => {
 			background.style.backgroundImage = 'var(--mainBackground)';
 			underline(homeBtn);
 			cursorIcon.style.display = 'inherit';
+            sideBar.scrollable.scrollTo(0, 0);
 			home.render();
 		});
 		productBtn.addEventListener('click', () => {
@@ -39,6 +40,7 @@ const handle = (() => {
 			background.style.backgroundImage = 'var(--productsBackground)';
 			underline(productBtn);
 			cursorIcon.style.display = 'inherit';
+            sideBar.scrollable.scrollTo(0, 0);
 			products.render();
 		});
 		aboutBtn.addEventListener('click', () => {
@@ -46,6 +48,7 @@ const handle = (() => {
 			background.style.backgroundImage = 'var(--aboutBackground)';
 			underline(aboutBtn);
 			cursorIcon.style.display = 'inherit';
+            sideBar.scrollable.scrollTo(0, 0);
 			about.render();
 		});
 		contactBtn.addEventListener('click', () => {
@@ -53,6 +56,7 @@ const handle = (() => {
 			background.style.backgroundImage = 'var(--contactBackground)';
 			underline(contactBtn);
 			cursorIcon.style.display = 'none';
+            sideBar.scrollable.scrollTo(0, 0);
 			contact.render();
 		});
 	};
