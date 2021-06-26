@@ -1,7 +1,19 @@
+:root{
+    --bottleBackground: url('./images/Randoms-1.JPG');
+    --mainBackground: url('./images/Randoms-1-3.JPG');
+}
 @font-face {
     font-family: 'Oswald';
     src: url('./fonts/Oswald-VariableFont_wght.ttf') 
     format('truetype-variations');
+}
+@keyframes fadeIn {
+    from {color: transparent;
+        opacity: 0%;
+    }
+    to {color: black;
+        opacity: 100%;
+    }
 }
 html, body {
     margin: 0px;
@@ -18,18 +30,32 @@ nav {
     flex-direction: column;
     justify-content: space-evenly;
 }
+p {
+    font-family: 'Oswald';
+    font-size: 1rem;
+    font-variation-settings: 'wght' 50;
+}
+h2 {
+    font-family: 'Oswald';
+}
+h6 {
+    font-family: 'Oswald';
+    font-size: 1.1rem;
+    margin: 1rem 0rem 1rem 0rem; 
+}
 #content {
     flex-direction: column;
     justify-content: center;
     background-repeat: no-repeat;
     background-size:cover;
     background-image: url('./images/Randoms-1-3.JPG');
+    transition: background-image 0.6s ease-in-out;
 }
 #scrollable {
     width: 60%;
     height: 60vh;
-    margin: 15vh 0px 15vh 20rem;
-    padding: 5vh 0rem 5vh 0rem;
+    margin: 19vh 0px 15vh 20rem;
+    padding: 1vh 0rem 5vh 0rem;
     border-radius: 1rem;
     justify-content: flex-start;
     flex-direction: column;
@@ -55,6 +81,7 @@ height: 10vh;
 background: rgb(255,255,255);
 background: linear-gradient(180deg,
  rgba(255,255,255,0) 0%,
+ rgba(255, 255, 255, 0.815) 50%,
   rgba(255,255,255,1) 100%);
 }
 #scrollIcon {
@@ -76,7 +103,7 @@ background: linear-gradient(180deg,
     width: 20rem;
     height: 100vh;
 }
-#logo{
+.logo{
     margin-top: 3rem;
     width: 8rem;
 }
@@ -89,9 +116,14 @@ background: linear-gradient(180deg,
     font-variation-settings: 'wght' 250;
     cursor: pointer;
 }
-.navbar:active {
+.navbar:hover {
+    font-weight: 900;
+    transition: font-weight 0.1s;
+}
+#homeBtn {
     text-decoration: underline;
 }
+
 #copyContainer {
     justify-content: space-between;
     width: 100%;
@@ -114,8 +146,62 @@ background: linear-gradient(180deg,
 
 .titles {
     font-family: 'Oswald';
+    animation-name: fadeIn;
+    animation-duration: 2.5s;
 }
-.milestones {
-    
+.subTitles {
+    font-size: 1rem;
+    font-variation-settings: 'wght' 50;
+    animation-name: fadeIn;
+    animation-duration: 5s;
+}
+#homeLogo {
+    margin-bottom: 2vh;
+    animation-name: fadeIn;
+    animation-duration: 4s;
 }
 
+/* PRODUCTS */
+
+.beerContainer {
+    flex-direction: column;
+    min-width: 100%;
+    margin: 0vh 0vh 8.5vh 0vh;
+}
+
+ .imgContainer {
+    margin-left: 5rem;
+ }
+
+.beerImg {
+    height: 50vh;
+}
+
+ .descContainer {
+     width: 80%;
+}
+.desc {
+    width: 50%;
+    font-size: 1.2rem;
+    font-variation-settings: 'wght' 300;
+}
+ .statsContainer {
+     margin-right: 5rem;
+ flex-direction: column;
+ width: fit-content;
+ font-size: 1.2rem;
+ }
+.seal {
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    width: 7rem;
+}
+#finalImage {
+    height: 25vw;
+}
+
+/* ABOUT */
+
+#aboutText {
+    padding: 10rem;
+}
