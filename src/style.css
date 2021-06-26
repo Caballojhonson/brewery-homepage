@@ -223,7 +223,7 @@ h6 {
 
 .contactContainer {
 	height: 100%;
-	align-items: start;
+	align-items: baseline;
 }
 .form {
 	display: flex;
@@ -232,7 +232,7 @@ h6 {
 }
 .disclaimerContainer {
 	flex-direction: column;
-
+	justify-content: space-evenly;
 	width: 53%;
 }
 .input {
@@ -254,15 +254,21 @@ h6 {
 #instaLogo {
 	width: 5rem;
 	cursor: pointer;
-    margin: 3rem;
+	margin: 2.5rem;
 }
 .submit {
-    align-self: center;
+	align-self: center;
 	width: 25%;
-    padding: 0.6rem;
-    font-family: 'Oswald';
-    color: rgb(230, 230, 230);
-    background-color: rgb(47, 47, 49);
-    border-radius: 0.2rem;
-    margin: 0.5rem;
+	padding: 0.6rem;
+	font-family: 'Oswald';
+	color: rgb(230, 230, 230);
+	background-color: rgb(47, 47, 49);
+	border-radius: 0.2rem;
+	margin: 0.5rem;
+	cursor: pointer;
+}
+
+/* MOBILE VERSION */
+
+@media screen and (max-width: 1024px) {
 }
