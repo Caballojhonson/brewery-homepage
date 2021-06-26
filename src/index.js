@@ -6,6 +6,10 @@ import { contact } from './modules/contact.js';
 
 import './style.css';
 
+import background1 from './images/Randoms-1-3.JPG';
+import background2 from './images/Randoms-1.JPG';
+import background3 from './images/Randoms-1-4.JPG';
+import background4 from './images/Randoms-1-5.JPG';
 
 preloadImgs();
 sideBar.render();
@@ -33,7 +37,7 @@ const handle = (() => {
 			background.style.backgroundImage = 'var(--mainBackground)';
 			underline(homeBtn);
 			cursorIcon.style.display = 'inherit';
-            sideBar.scrollable.scrollTo(0, 0);
+			sideBar.scrollable.scrollTo(0, 0);
 			home.render();
 		});
 		productBtn.addEventListener('click', () => {
@@ -41,7 +45,7 @@ const handle = (() => {
 			background.style.backgroundImage = 'var(--productsBackground)';
 			underline(productBtn);
 			cursorIcon.style.display = 'inherit';
-            sideBar.scrollable.scrollTo(0, 0);
+			sideBar.scrollable.scrollTo(0, 0);
 			products.render();
 		});
 		aboutBtn.addEventListener('click', () => {
@@ -49,7 +53,7 @@ const handle = (() => {
 			background.style.backgroundImage = 'var(--aboutBackground)';
 			underline(aboutBtn);
 			cursorIcon.style.display = 'inherit';
-            sideBar.scrollable.scrollTo(0, 0);
+			sideBar.scrollable.scrollTo(0, 0);
 			about.render();
 		});
 		contactBtn.addEventListener('click', () => {
@@ -57,7 +61,7 @@ const handle = (() => {
 			background.style.backgroundImage = 'var(--contactBackground)';
 			underline(contactBtn);
 			cursorIcon.style.display = 'none';
-            sideBar.scrollable.scrollTo(0, 0);
+			sideBar.scrollable.scrollTo(0, 0);
 			contact.render();
 		});
 	};
@@ -65,16 +69,14 @@ const handle = (() => {
 })();
 
 function preloadImgs() {
-    const mainBackground = new Image();
-    mainBackground.src = "./images/Randoms-1-3.JPG";
+	const mainBackground = new Image();
+	mainBackground.src = background1;
 	const productsBackground = new Image();
-    productsBackground.src = "./images/Randoms-1.JPG";
+	productsBackground.src = background2;
 	const aboutBackground = new Image();
-    aboutBackground.src = "./images/Randoms-1-4.JPG";
+	aboutBackground.src = background3;
 	const contactBackground = new Image();
-    contactBackground.src = "./images/Randoms-1-5.JPG";
+	contactBackground.src = background4;
 }
 
-
 handle.listeners();
-
