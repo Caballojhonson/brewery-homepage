@@ -1,213 +1,268 @@
-:root{
-
-    --mainBackground: url('./images/Randoms-1-3.JPG');
-    --productsBackground: url('./images/Randoms-1.JPG');
-    --aboutBackground: url('./images/Randoms-1-4.JPG');
-    --contactBackground: url('./images/Randoms-1-5.JPG');
+:root {
+	--mainBackground: url('./images/Randoms-1-3.JPG');
+	--productsBackground: url('./images/Randoms-1.JPG');
+	--aboutBackground: url('./images/Randoms-1-4.JPG');
+	--contactBackground: url('./images/Randoms-1-5.JPG');
 }
 @font-face {
-    font-family: 'Oswald';
-    src: url('./fonts/Oswald-VariableFont_wght.ttf') 
-    format('truetype-variations');
+	font-family: 'Oswald';
+	src: url('./fonts/Oswald-VariableFont_wght.ttf') format('truetype-variations');
 }
 @keyframes fadeIn {
-    from {color: transparent;
-        opacity: 0%;
-    }
-    to {color: black;
-        opacity: 100%;
-    }
+	from {
+		color: transparent;
+		opacity: 0%;
+	}
+	to {
+		color: black;
+		opacity: 100%;
+	}
 }
-html, body {
-    margin: 0px;
-    min-height: 100%;
+html,
+body {
+	margin: 0px;
+	min-height: 100%;
 }
 div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 p {
-    font-family: 'Oswald';
-    font-size: 1rem;
-    font-variation-settings: 'wght' 50;
+	font-family: 'Oswald';
+	font-size: 1rem;
+	font-variation-settings: 'wght' 50;
 }
-h2 {
-    font-family: 'Oswald';
+h2,
+h1 {
+	font-family: 'Oswald';
 }
 h6 {
-    font-family: 'Oswald';
-    font-size: 1.1rem;
-    margin: 1rem 0rem 1rem 0rem; 
+	font-family: 'Oswald';
+	font-size: 1.1rem;
+	margin: 1rem 0rem 1rem 0rem;
 }
 #content {
-    flex-direction: column;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-image: url('./images/Randoms-1-3.JPG');
-    transition: background-image 0.6s ease-in-out;
+	flex-direction: column;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('./images/Randoms-1-3.JPG');
+	transition: background-image 0.6s ease-in-out;
 }
 #scrollable {
-    width: 60%;
-    height: 60vh;
-    margin: 19vh 0px 15vh 20rem;
-    padding: 1vh 0rem 5vh 0rem;
-    border-radius: 1rem;
-    justify-content: flex-start;
-    flex-direction: column;
-    background: radial-gradient(circle,
-     rgba(255, 255, 255, 0.959) 65%,
-      rgba(255, 255, 255, 0.76) 92%,
-       rgba(255, 255, 255, 0.589) 98%);
-    overflow-x: hidden;
-    overflow-y: scroll;
-    -ms-overflow-style: none; /* for Internet Explorer, Edge */
-    scrollbar-width: none; /* for Firefox */
+	width: 60%;
+	height: 60vh;
+	margin: 19vh 0px 15vh 20rem;
+	padding: 1vh 0rem 5vh 0rem;
+	border-radius: 1rem;
+	justify-content: flex-start;
+	flex-direction: column;
+	background: radial-gradient(
+		circle,
+		rgba(255, 255, 255, 0.959) 65%,
+		rgba(255, 255, 255, 0.76) 92%,
+		rgba(255, 255, 255, 0.589) 98%
+	);
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-ms-overflow-style: none; /* for Internet Explorer, Edge */
+	scrollbar-width: none; /* for Firefox */
 }
 #scrollable::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
+	display: none; /* for Chrome, Safari, and Opera */
 }
 #scrollSection {
-position: sticky;
-margin: -25vh 0px 15vh 20rem;
-border-bottom-left-radius: 1rem;
-border-bottom-right-radius: 1rem;;
-width: 60%;
-height: 10vh;
-background: rgb(255,255,255);
-background: linear-gradient(180deg,
- rgba(255,255,255,0) 0%,
- rgba(255, 255, 255, 0.815) 50%,
-  rgba(255,255,255,1) 100%);
+	position: sticky;
+	margin: -25vh 0px 15vh 20rem;
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	width: 60%;
+	height: 10vh;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0) 0%,
+		rgba(255, 255, 255, 0.815) 50%,
+		rgba(255, 255, 255, 1) 100%
+	);
 }
 #scrollIcon {
-    width: 2.4rem;
+	width: 2.4rem;
 }
 
 /* SIDEBAR */
 
 #sideBar {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    flex-direction: column;
-    justify-content: space-between;
-    background-image: linear-gradient(to right,
-     rgba(255, 255, 255, 0.932) 75%,
-      rgba(255, 255, 255, 0.795));
-    width: 20rem;
-    height: 100vh;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	flex-direction: column;
+	justify-content: space-between;
+	background-image: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0.932) 75%,
+		rgba(255, 255, 255, 0.795)
+	);
+	width: 20rem;
+	height: 100vh;
 }
-.logo{
-    margin-top: 3rem;
-    width: 8rem;
+.logo {
+	margin-top: 3rem;
+	width: 8rem;
 }
 #linkContainer {
-    flex-grow: 0.2;
+	flex-grow: 0.2;
 }
 .navbar {
-    font-family: 'Oswald';
-    font-size: 1.7rem;
-    font-variation-settings: 'wght' 250;
-    cursor: pointer;
+	font-family: 'Oswald';
+	font-size: 1.7rem;
+	font-variation-settings: 'wght' 250;
+	cursor: pointer;
 }
 .navbar:hover {
-    font-weight: 900;
-    transition: font-weight 0.1s;
+	font-weight: 900;
+	transition: font-weight 0.1s;
 }
 #homeBtn {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 #copyContainer {
-    justify-content: space-between;
-    width: 100%;
+	justify-content: space-between;
+	width: 100%;
 }
 #copyright {
-    font-family: 'Oswald';
-    font-size: 0.6rem;
-    font-variation-settings: 'wght' 50;
-    margin-right: 20%;
+	font-family: 'Oswald';
+	font-size: 0.6rem;
+	font-variation-settings: 'wght' 50;
+	margin-right: 20%;
 }
 #linkToGit {
-   margin-left: 15%;
-    cursor: pointer;
+	margin-left: 15%;
+	cursor: pointer;
 }
 #gitLogo {
-    width: 2rem;
+	width: 2rem;
 }
 
 /* HOME */
 
 .titles {
-    font-family: 'Oswald';
-    animation-name: fadeIn;
-    animation-duration: 2.5s;
+	font-family: 'Oswald';
+	animation-name: fadeIn;
+	animation-duration: 2.5s;
 }
 .subTitles {
-    font-size: 1rem;
-    font-variation-settings: 'wght' 50;
-    animation-name: fadeIn;
-    animation-duration: 5s;
+	font-size: 1rem;
+	font-variation-settings: 'wght' 50;
+	animation-name: fadeIn;
+	animation-duration: 5s;
 }
 #homeLogo {
-    margin-bottom: 2vh;
-    animation-name: fadeIn;
-    animation-duration: 4s;
+	margin-bottom: 2vh;
+	animation-name: fadeIn;
+	animation-duration: 4s;
 }
 
 /* PRODUCTS */
 
 .beerContainer {
-    flex-direction: column;
-    min-width: 100%;
-    margin: 0vh 0vh 8.5vh 0vh;
+	flex-direction: column;
+	min-width: 100%;
+	margin: 0vh 0vh 8.5vh 0vh;
 }
 
- .imgContainer {
-    margin-left: 5rem;
- }
+.imgContainer {
+	margin-left: 5rem;
+}
 
 .beerImg {
-    height: 50vh;
+	height: 50vh;
 }
 
- .descContainer {
-     width: 80%;
+.descContainer {
+	width: 80%;
 }
 .desc {
-    width: 50%;
-    font-size: 1.2rem;
-    font-variation-settings: 'wght' 300;
+	width: 50%;
+	font-size: 1.2rem;
+	font-variation-settings: 'wght' 300;
 }
- .statsContainer {
-     margin-right: 5rem;
- flex-direction: column;
- width: fit-content;
- font-size: 1.2rem;
- }
+.statsContainer {
+	margin-right: 5rem;
+	flex-direction: column;
+	width: fit-content;
+	font-size: 1.2rem;
+}
 .seal {
-    margin-top: -2rem;
-    margin-bottom: 2rem;
-    width: 7rem;
+	margin-top: -2rem;
+	margin-bottom: 2rem;
+	width: 7rem;
 }
 #finalImage {
-    height: 25vw;
+	height: 25vw;
 }
 
 /* ABOUT */
 
 #aboutText {
-    padding: 5rem 12rem 10rem 12rem;
-    letter-spacing: 0.2px;
-    line-height: 1.7rem;
-    
+	padding: 5rem 12rem 10rem 12rem;
+	letter-spacing: 0.2px;
+	line-height: 1.7rem;
+}
+
+/* CONTACT */
+
+.contactContainer {
+	height: 100%;
+	align-items: start;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+.disclaimerContainer {
+	flex-direction: column;
+
+	width: 53%;
+}
+.input {
+	font-family: 'Oswald';
+	border: none;
+	height: 2.5rem;
+	margin: 0.5rem;
+	border-radius: 0.7rem;
+	text-align: center;
+}
+.input:focus {
+	border: none;
+}
+#textInput {
+	height: 10rem;
+	text-align: justify;
+	padding: 1.2rem 2rem 1.2rem 2rem;
+}
+#instaLogo {
+	width: 5rem;
+	cursor: pointer;
+    margin: 3rem;
+}
+.submit {
+    align-self: center;
+	width: 25%;
+    padding: 0.6rem;
+    font-family: 'Oswald';
+    color: rgb(230, 230, 230);
+    background-color: rgb(47, 47, 49);
+    border-radius: 0.2rem;
+    margin: 0.5rem;
 }
