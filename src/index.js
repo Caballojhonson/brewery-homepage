@@ -4,9 +4,10 @@ import { products } from './modules/products.js';
 import { about } from './modules/about.js';
 import { contact } from './modules/contact.js';
 
-
 import './style.css';
 
+
+preloadImgs();
 sideBar.render();
 home.render();
 
@@ -62,6 +63,17 @@ const handle = (() => {
 	};
 	return { listeners };
 })();
+
+function preloadImgs() {
+    const mainBackground = new Image();
+    mainBackground.src = "./images/Randoms-1-3.JPG";
+	const productsBackground = new Image();
+    productsBackground.src = "./images/Randoms-1.JPG";
+	const aboutBackground = new Image();
+    aboutBackground.src = "./images/Randoms-1-4.JPG";
+	const contactBackground = new Image();
+    contactBackground.src = "./images/Randoms-1-5.JPG";
+}
 
 
 handle.listeners();
