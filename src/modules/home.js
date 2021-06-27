@@ -16,10 +16,10 @@ const home = (() => {
 
 	const subTitles = [
 		`Launched on January 2020, one of the best moments in modern history to start a craft brewery.
-         We broke the record for number of events created and cancelled per time in business`,
-		`We stopped selling in February 2020 to avoid stock breaking before a big festival we were part of.
+		We broke the record for cancellations to time in business ratio.`,
+		`We stopped selling in February 2020 to avoid running out of stock before a big festival we were part of.
         It was of course also cancelled.`,
-		`We'll never brew an IPA! We said... So we never did`,
+		`We promised we would never brew an IPA, so we never did.`,
 		`June 2021: We're proud to be the first company to launch its official website when it's no longer necessary.
          Just do everything wrong, totally worth it.`,
 		`Ourselves`,
